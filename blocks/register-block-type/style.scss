@@ -1,0 +1,43 @@
+.message-body {
+    display: inline-block;
+}
+.editor-rich-text {
+    display: inline-block;
+}
+.wp-block-halina-headline-with-icon {
+    display: flex;
+    align-items: center;
+    p {
+        margin-bottom: 0;
+        min-width: 300px;
+    }
+}
+.editor-rich-text__tinymce {
+    padding-left: 20px;
+}
+.message-body  {
+    height: 60px;
+    display: flex;
+    align-items: center;
+     p {
+        font-weight: bold;
+        padding-left: 10px;
+        margin-top: 0;
+    }
+}
+.message-body-blue {
+    height: 60px;
+    display: flex;
+    align-items: center;
+     p {
+        font-weight: bold;
+        padding-left: 10px;
+        margin-top: 0;
+        font-size: 18px;
+        color: #50A1FF;
+    }
+}
+.components-radio-control__option {
+    display: flex;
+    align-items: center;
+}
