@@ -59,8 +59,8 @@ export default registerBlockType(
         setAttributes
       } = props;
 
-      const onChangeMessage = message => {
-        setAttributes({ message });
+      const onChangeMessage = e => {
+        setAttributes({ message: e.target.value });
       };
 
       // Return the markup displayed in the editor
@@ -97,10 +97,8 @@ export default registerBlockType(
                 return null;
             }
           })()}
-          <RichText
-            tagName="div"
-            multiline="p"
-            placeholder={__("Add your headline", "polandtravel")}
+          <input
+            type='text'
             onChange={onChangeMessage}
             value={message}
           />

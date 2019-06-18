@@ -1,10 +1,9 @@
 <?php
 /**
- * Plugin Name: A custom headline with icon
- * Plugin URI: https://gutenberg.courses
- * Text Domain: jpolandtravel
+ * Plugin Name: Icon to choose headline
+ * Text Domain: polandtravel
  * Author: Halina Balys
- * Version: 2.1.0
+ * Version: 1.0.0
  
  *
  * @package polandtravel
