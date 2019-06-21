@@ -5,8 +5,10 @@
   display: inline-block; }
 
 .wp-block-halina-headline-with-icon {
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
   .wp-block-halina-headline-with-icon p {
     margin-bottom: 0;
     min-width: 300px; }
@@ -16,8 +18,10 @@
 
 .message-body {
   height: 60px;
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
   .message-body p {
     font-weight: bold;
     padding-left: 10px;
@@ -25,8 +29,10 @@
 
 .message-body-blue {
   height: 60px;
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
   .message-body-blue p {
     font-weight: bold;
     padding-left: 10px;
@@ -35,5 +41,7 @@
     color: #50A1FF; }
 
 .components-radio-control__option {
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
