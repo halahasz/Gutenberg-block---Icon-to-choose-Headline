@@ -97,11 +97,16 @@ export default registerBlockType(
                 return null;
             }
           })()}
-          <input
-            type='text'
-            onChange={onChangeMessage}
+          <RichText
+            tagName="div"
+            multiline="p"
+            placeholder={__("Add headline text...")}
+            keepPlaceholderOnFocus
             value={message}
+            formattingControls={["bold", "italic", "strikethrough", "link"]}
+            onChange={value => setAttributes({ message: value })}
           />
+          <input type="text" onChange={onChangeMessage} value={message} />
         </div>
       ];
     },
