@@ -1,4 +1,4 @@
-import carIcon from "./icons.js";
+import icons from "./icons.js";
 import "./style.scss";
 
 // Get React Fragment
@@ -124,15 +124,23 @@ export default registerBlockType(
               case "car":
                 return (
                   <div class="message-body-blue">
-                    {carIcon}
-                    {message}
+                    {icons.icon}
+                    <RichText.Content
+                      tagName="div"
+                      className="custom-headline-text"
+                      value={message}
+                    />
                   </div>
                 );
               case "group":
                 return (
                   <div class="message-body">
-                    {blockIcons.group}
-                    {message}
+                    {icons.upload}
+                    <RichText.Content
+                      tagName="div"
+                      className="custom-headline-text"
+                      value={message}
+                    />
                   </div>
                 );
               default:
