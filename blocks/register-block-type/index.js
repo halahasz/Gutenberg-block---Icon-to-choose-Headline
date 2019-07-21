@@ -90,23 +90,39 @@ export default registerBlockType(
           {(() => {
             switch (setting) {
               case "car":
-                return icons.car;
+                return (
+                  <div class="message-body-blue">
+                    {icons.car}
+                    <RichText
+                     tagName="div"
+                     multiline="p"
+                     placeholder={__("Add headline text...")}
+                     keepPlaceholderOnFocus
+                     value={message}
+                     formattingControls={["bold", "italic", "strikethrough", "link"]}
+                     onChange={value => setAttributes({ message: value })}
+                    />
+                  </div>
+                );
               case "group":
-                return icons.group;
+                return (
+                  <div class="message-body-blue">
+                    {icons.group}
+                    <RichText
+                      tagName="div"
+                      multiline="p"
+                      placeholder={__("Add headline text...")}
+                      keepPlaceholderOnFocus
+                      value={message}
+                      formattingControls={["bold", "italic", "strikethrough", "link"]}
+                      onChange={value => setAttributes({ message: value })}
+                    />
+                  </div>
+                );
               default:
                 return null;
             }
           })()}
-          <RichText
-            tagName="div"
-            multiline="p"
-            placeholder={__("Add headline text...")}
-            keepPlaceholderOnFocus
-            value={message}
-            formattingControls={["bold", "italic", "strikethrough", "link"]}
-            onChange={value => setAttributes({ message: value })}
-          />
-          {/* <input type="text" onChange={onChangeMessage} value={message} /> */}
         </div>
       ];
     },
@@ -135,7 +151,7 @@ export default registerBlockType(
               case "group":
                 return (
                   <div class="message-body">
-                    {icons.car}
+                    {icons.group}
                     <RichText.Content
                       tagName="div"
                       className="custom-headline-text"
