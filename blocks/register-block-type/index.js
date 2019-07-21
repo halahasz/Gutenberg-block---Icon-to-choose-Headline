@@ -90,39 +90,22 @@ export default registerBlockType(
           {(() => {
             switch (setting) {
               case "car":
-                return (
-                  <div class="message-body-blue">
-                    {icons.car}
-                    <RichText
-                     tagName="div"
-                     multiline="p"
-                     placeholder={__("Add headline text...")}
-                     keepPlaceholderOnFocus
-                     value={message}
-                     formattingControls={["bold", "italic", "strikethrough", "link"]}
-                     onChange={value => setAttributes({ message: value })}
-                    />
-                  </div>
-                );
+                return icons.car;
               case "group":
-                return (
-                  <div class="message-body-blue">
-                    {icons.group}
-                    <RichText
-                      tagName="div"
-                      multiline="p"
-                      placeholder={__("Add headline text...")}
-                      keepPlaceholderOnFocus
-                      value={message}
-                      formattingControls={["bold", "italic", "strikethrough", "link"]}
-                      onChange={value => setAttributes({ message: value })}
-                    />
-                  </div>
-                );
+                return icons.group;
               default:
                 return null;
             }
           })()}
+          <RichText
+            tagName="div"
+            multiline="p"
+            placeholder={__("Add headline text...")}
+            keepPlaceholderOnFocus
+            value={message}
+            formattingControls={["bold", "italic", "strikethrough", "link"]}
+            onChange={value => setAttributes({ message: value })}
+          />
         </div>
       ];
     },
