@@ -33,7 +33,7 @@ export default registerBlockType(
     // Customize background color
     icon: {
       // background: "#0073AA",
-      src: blockIcons.car
+      src: icons.car
     },
     // Limit to 3 Keywords / Phrases
     keywords: [__("Headline", "polandtravel")],
@@ -73,11 +73,11 @@ export default registerBlockType(
                 selected={setting}
                 options={[
                   {
-                    label: blockIcons.car,
+                    label: icons.car,
                     value: "car"
                   },
                   {
-                    label: blockIcons.group,
+                    label: icons.group,
                     value: "group"
                   }
                 ]}
@@ -90,9 +90,9 @@ export default registerBlockType(
           {(() => {
             switch (setting) {
               case "car":
-                return blockIcons.car;
+                return icons.car;
               case "group":
-                return blockIcons.group;
+                return icons.group;
               default:
                 return null;
             }
@@ -106,7 +106,7 @@ export default registerBlockType(
             formattingControls={["bold", "italic", "strikethrough", "link"]}
             onChange={value => setAttributes({ message: value })}
           />
-          <input type="text" onChange={onChangeMessage} value={message} />
+          {/* <input type="text" onChange={onChangeMessage} value={message} /> */}
         </div>
       ];
     },
@@ -124,7 +124,7 @@ export default registerBlockType(
               case "car":
                 return (
                   <div class="message-body-blue">
-                    {icons.icon}
+                    {icons.car}
                     <RichText.Content
                       tagName="div"
                       className="custom-headline-text"
@@ -135,7 +135,7 @@ export default registerBlockType(
               case "group":
                 return (
                   <div class="message-body">
-                    {icons.upload}
+                    {icons.car}
                     <RichText.Content
                       tagName="div"
                       className="custom-headline-text"
