@@ -33,7 +33,7 @@ export default registerBlockType(
     // Customize background color
     icon: {
       // background: "#0073AA",
-      src: icons.car
+      src: icons.list
     },
     // Limit to 3 Keywords / Phrases
     keywords: [__("Headline", "polandtravel")],
